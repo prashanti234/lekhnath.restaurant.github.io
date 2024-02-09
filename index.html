@@ -1,34 +1,114 @@
 <!DOCTYPE html>
-    <head>
-    <title>Lekhnath Restaurant</title>
-    
+<html lang="en">
+<head>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgba(0, 0, 0, 0.7) url('food.jpg') center center fixed;
+    background-size: cover;
+    background-blend-mode:darken;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 
-    </head>
+
+.container h1{
+    color: orangered;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    display: inline-block;
+    padding: 18px;
+    text-transform: uppercase;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 4px;
+    transition: 0s;
+}
+
+.navbar ul li a:hover{
+    box-shadow: 0 3px 50px orangered inset;
+}
+
+.navbar .reservation{
+    padding: 8px;
+    background-color: orangered;
+}
+
+.content{
+    position: absolute;
+    color: #fff;
+    top: 40%;
+    left: 30%;
+}
+
+.content h3{
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-left: 20%;
+    text-align: left;
+}
+
+.content h1{
+    font-size: 8cap;
+    text-align: center;
+}
+
+.content p{
+    text-align: left;
+    margin-top: 17px;
+    text-align: right;
+
+
+
+}
+.footer{
+    display: flex;
+    display: bottom;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEKHNATH RESTAURANT</title>
     <link rel="stylesheet" href="style.css">
-    <marquee>Are you hungry!There is a 50% discount on first delivery.select your desired food and order it now.Thank you</marquee>
-    
 
-    <body link="green" vlink="red" alink="black">
-        <h1>Lekhnath Restaurant</h1>
-        
+</head>
+<body>
+    <div class="container">
+        <h1>LEKHNATH <BR>
+            RESTAURANT</h1>
+        <div class="navbar">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="About.html">ABOUT US</a></li>
+                <li><a href="Menu.html">MENU</a></li>
+                <li><a href="chief.html">CHEFS</a></li>
+                <li><a href="branches.html">BRANCHES</a></li>
+                <li><a href="contact us.html">CONTACT US</a></li>
+                <li><a href="terms.html" href="#">TERMS AND CONDITIONS</a></li><br>
+                <li><a href="Order now.html">Order Now </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <h3 >Welcome to LEKHNATH RESTAURANT</h3>
+        <h1>Rich Healthy and Natural Food</h1>
+        <p>Lekhnath restaurant is a restaurant located in Lekhnath,Pokhara.we have some amazing recipes
+            and the most talented chefs in the country.</p>
+    </div>
+    <footer font color="red">
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
     
-     <div class="div1">
-        <a href="Menu.html">Check for Menu</a></div>
-       
-       <div class="div2"> <a href="About.html">()About Us</a> </div>
-        <div class="div3"><a href="contact us.html">()Contact us</a></div>
-        <div class="div4"><a href="Chief.html">()Chiefs</a></div>
-        <div class="div5"><a href="office.html">()office</a></a></div>
-        <div class="div6"><a href="branches.html">()branches</a></div>
-        <div class="div7"><a href="Order now.html"><Order>Order now</Order></a></div>
-        <div class="div8"> <font color="blue"> ......Customer Satisfaction is our primary goal...... </font><br>
-        <a href="term.html"><button>Terms and condition
-
-        </button></a> </div>
-    
-        </body>
-        
-        
-    
+</body>
 </html>
