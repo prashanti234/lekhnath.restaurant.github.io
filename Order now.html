@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" a href="37successfulmsgonsubmit.css">
+    <style>
+        h1 {
+            font-size: 3em;
+            text-align: center;
+        }
+
+        .div1 {
+            font-size: 2em;
+            float: inherit;
+        }
+
+        body {
+            background-image: url(delivewry.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            
+        }
+
+        h2 {
+            font-size: 3.24cap;
+            text-align: center;
+        }
+
+        p {
+            font-size: 2em;
+        }
+
+        h3 {
+            font-size: 2em;
+        }
+        .container{
+            max-width: 100px;
+            width:100% ;
+           justify-content: center;
+            align-items: center;
+
+
+        }
+        button:hover{
+            background-color: #a2dc0d;
+            transition-delay: 0s;
+            animation-duration: 0s;
+            scale: 1.2;
+        }
+    
+       
+        input{
+            border-radius: 5px;
+            height: 30px;
+            background-color: rgb(19, 9, 1);
+            text-decoration-color: aqua;
+            font-size: o.9cap;
+            color: #a5e10d;
+            width: 55cap;
+        }
+        ::placeholder{
+            text-align: center;
+            forced-color-adjust: dark;
+            text-decoration-color: rgb(200, 120, 83);
+            font-size: 2cap;
+           
+        }
+        button:hover{
+            background-color: #a2dc0d;
+            transition-delay: 0s;
+            animation-duration: 0s;
+            scale: 1.2;
+        }
+        a{
+            text-decoration: none;
+        }
+    
+        button{
+           
+          border-color: #f7f310;
+            border-radius: 3cap;
+            size: 3cap;
+            width: 20cap;
+            background: transparent;
+            text-decoration-color: #e6e607;
+            background-color: #a5e10d;
+          height: 55px;
+          scroll-behavior: smooth;
+          text-shadow: #a5e10d;
+        text-overflow: ellipsis;
+        direction: rtl;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Fill your details and order your food now<br></h1>
+    <h2>
+        <a href="Menu.html"><button>MENU</button></a>
+        <a href="index2.0.htm"><button>HOME</button></a>
+        <a href="Payment.html"><button>PAYMENT</button></a>
+    
+    
+    <div class="container"><form id="myForm" method="post">
+    
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"  placeholder="Your Name:" size="50" required>
+        <br>
+        <label for="gender">Gender:</label>
+        <input type="text" id="gender" name="gender" placeholder="Gender:" required>
+        <br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" placeholder="Address:" required><br>
+
+        <label for="food">Food:</label>
+        <input type="text" id="food" name="food" placeholder="Food:" required>
+        <br>
+        <label for="Quantity">Quantity:</label>
+        <input type="text" id="quantity" name="quantity" placeholder="Enter quanitiy:"required size="50"><br>
+
+        <label for="Adjustments">Adjustments:</label>
+        <input type="text" id="adjustments" placeholder="Enter Adjustments:" name="adjustments" required><br>
+
+        <button id="submit"><a href="uu.htm"> SUBMIT</a></button>
+        
+    </button>
+    </form>
+    </div>
+   
+   
+    
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Fetch the form data
+            var formData = new FormData(e.target);
+            const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxZ1gwf0gw5pUKSJc9Hh8iGkxF_1I-Z9dh3GWri7B-wn-qPseVZnlV6ma-98RxWdRQ4aw/exec"
+            // Send the data to the Google Apps Script
+            fetch(SCRIPT_URL, {
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => response.text())
+            .then(data => {
+                console.log(data); // Handle success or error
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+
+
+
+
+
+        
+    </script>
+</body>
+</html>

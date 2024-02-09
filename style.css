@@ -1,0 +1,85 @@
+
+        marquee{
+            font-size: 5cap;
+            scroll-padding-inline-end: 12;
+        }
+        body {
+            background-image: url(hotel.jpeg);
+            
+
+            
+
+        
+             }
+             h1{
+               font-size: 5cap;
+               text-decoration: antiquewhite;
+               text-align: center;
+             }
+             
+             .div1{
+                
+            
+                font-size: 4cap;
+                text-decoration: antiquewhite;
+                text-decoration-color: aquamarine;
+                
+               
+             }
+             .div2{
+                font-size: 4cap;
+                text-decoration: antiquewhite;
+                
+             }
+             .div3{
+                font-size: 4cap;
+                text-decoration: antiquewhite;
+
+             }
+             .div4{
+                font-size: 4cap;
+                text-decoration: antiquewhite;
+
+             }
+             .div5{
+                font-size: 4cap;
+                text-decoration: antiquewhite;
+             }
+             .div6{
+                font-size: 4cap;
+                text-decoration: antiquewhite;
+                cursor: wait;
+             }
+
+             .div7{
+               font-size: 8cap;
+               float: right;
+               text-decoration: antiquewhite;
+               
+             }
+             Order now{
+            text-decoration: antiquewhite;margin-left: 50%;
+            text-align: center;
+             }
+            About us{
+               font-size: 4cap;
+               text-decoration: dotted;
+               margin-left: 50%;
+               text-align: center;
+            }
+         a:visited{
+            color:rgb(0, 0, 255),
+         }
+      text{
+         font-size: 10cap;
+         
+      background-color: rgb(12, 111, 78);
+      }
+      .div8{
+         font-size: 4cap;
+         display:grid;
+       place-items: center;
+      text-decoration-color: antiquewhite;
+
+      }
+    
