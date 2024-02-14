@@ -19,6 +19,7 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
+            font-family: 'Times New Roman', Times, serif;
             
         }
 
@@ -78,14 +79,15 @@
     
         button{
            
-          border-color: #f7f310;
+            border-color: #f7f310;
             border-radius: 3cap;
             size: 3cap;
             width: 20cap;
             background: transparent;
             text-decoration-color: #e6e607;
-            background-color: #a5e10d;
-          height: 55px;
+            background-color: #a2dc0d;
+            
+          height: 39px;
           scroll-behavior: smooth;
           text-shadow: #a5e10d;
         text-overflow: ellipsis;
@@ -98,7 +100,7 @@
     <h1>Fill your details and order your food now<br></h1>
     <h2>
         <a href="Menu.html"><button>MENU</button></a>
-        <a href="index.html"><button>HOME</button></a>
+        <a href="index2.0.htm"><button>HOME</button></a>
         <a href="Payment.html"><button>PAYMENT</button></a>
     
     
@@ -146,7 +148,10 @@
             })
             .then(response => response.text())
             .then(data => {
-                console.log(data); // Handle success or error
+
+
+                console.log(data);alert("SUCCEEFULLY ORDERED:")
+                // Handle success or error
             })
             .catch(error => {
                 console.error('Error:', error);
