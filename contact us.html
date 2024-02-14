@@ -12,19 +12,22 @@ body{
     text-align: center;
    background-color: antiquewhite;
    font-size: 3cap;
-    
+   background-image: url(black.jpg);
+   color: azure;
+    font-family: 'Times New Roman', Times, serif;
 }
 h6{
    
     font-size: 2cap;
     text-align: center;
     
+    
 }
 
         button:hover{
-            background-color: #a2dc0d;
+            background-color: #0ddcb6;
             transition-delay: 0s;
-            animation-duration: 0s;
+            animation-duration: 0.9s;
             scale: 1.2;
         }
     
@@ -37,6 +40,7 @@ h6{
             background: transparent;
             text-decoration-color: #e6e607;
             background-color: #a5e10d;
+            
           height: 55px;
           scroll-behavior: smooth;
           text-shadow: #a5e10d;
@@ -58,6 +62,8 @@ h6{
             font-size: 2cap;
            
         }
+        
+        
     </style>
 
 
@@ -89,51 +95,60 @@ h6{
             
                <h6> <form id="myForm" method="post">
     
-                    <label for="fname">First Name:</label><br>
-                    <input type="text" id="fname" name="fname"  placeholder="First Name:" size="50" required>
-                    <br>
-                    <label for="lname">Last Name:</label><br>
-                    <input type="text" id="lname" name="lname" placeholder="Lname:" required>
+                    <label for="name">First Name:</label><br>
+                    <input type="text" id="name" name="name"  placeholder="First Name:" required>
                     <br>
             
                     <label for="email">Email:</label><br>
-                    <input type="text" id="email" name="email" placeholder="Email:" required><br>
+                    <input type="textarea" id="email" name="email" placeholder="Email:" required><br>
             
                     <label for="message">Message:</label><br>
-                    <input type="text" id="message" name="message" placeholder="TYpe your message:" required><br>
+                    <input type="text" id="message" name="message" placeholder="Type your message:" required><br>
 
                     <label for="phone">Phone:</label><br>
-                    <input type="text" id="phone" name="message" placeholder="Phone:" required>
+                    <input type="number" id="phone" name="phone" placeholder="Phone:" required>
                     <br>
                    
                 
                
-                <button value="submit">SUBMIT</button></form>
+                <button value="submit">SUBMIT</button>
+            </form>
                 
             </h6>
             
-                <script>
-                    document.getElementById('myForm').addEventListener('submit', function (e) {
-                        e.preventDefault();
             
-                        // Fetch the form data
-                        var formData = new FormData(e.target);
-                        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzbn604eCK-QZsBu9ZxnGkAoOKeRs766CnbarUsuG0wrlwrJ5H1s_RCZlYzcf0T4hlf/exec"
-                        // Send the data to the Google Apps Script
-                        fetch(SCRIPT_URL, {
-                            method: 'POST',
-                            body: formData,
-                        })
-                        .then(response => response.text(wjfgwufg))
-                        .then(data => {
-                            console.log(data); // Handle success or error
-                        })
-                        .catch(error => {
-                            console.error('Error:', error);
-                        });
-                    });
-                </script>
+            <script>
+                document.getElementById('myForm').addEventListener('submit', function (e) {
+                    e.preventDefault();
         
-   
+                    // Fetch the form data
+                    var formData = new FormData(e.target);
+                    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyIndQ4PFdXzWjZ3xbd4nrrGuQ1vlpVFvJ0X2zFHUkpjIaUrrUXmc10bCJjQ-x1aLxx/exec"
+                    // Send the data to the Google Apps Script
+                    fetch(SCRIPT_URL, {
+                        method: 'POST',
+                        body: formData,
+                    })
+                    .then(response => response.text())
+                    .then(data => {
+        
+        
+                        console.log(data);alert("MESSAGE SENT,yow will be answered soon.")
+                        // Handle success or error
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+                });
+        
+        
+        
+        
+        
+                
+            </script>
+            
+                
 </body>
 </html>
+
