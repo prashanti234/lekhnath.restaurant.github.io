@@ -88,7 +88,7 @@ h6{
                     
                
                 <ul class="social-icons">
-                    <li><a href="https://www.facebook.com/prashanta.subedi.18"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
                    
                 </ul>
             
@@ -100,7 +100,7 @@ h6{
                     <br>
             
                     <label for="email">Email:</label><br>
-                    <input type="textarea" id="email" name="email" placeholder="Email:" required><br>
+                    <input type="email" id="email" name="email" placeholder="Email:" required><br>
             
                     <label for="message">Message:</label><br>
                     <input type="text" id="message" name="message" placeholder="Type your message:" required><br>
@@ -123,7 +123,7 @@ h6{
         
                     // Fetch the form data
                     var formData = new FormData(e.target);
-                    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyIndQ4PFdXzWjZ3xbd4nrrGuQ1vlpVFvJ0X2zFHUkpjIaUrrUXmc10bCJjQ-x1aLxx/exec"
+                    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwvBlkR7cKVDxNm3Zjbpmw1rKroSAI1QmWQs2611E61eUM_HOPgcqfzzN4WJHzhrgt0/exec"
                     // Send the data to the Google Apps Script
                     fetch(SCRIPT_URL, {
                         method: 'POST',
@@ -151,4 +151,5 @@ h6{
                 
 </body>
 </html>
+   
 
