@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" a href="37successfulmsgonsubmit.css">
+    
+    <link rel="shortcut icon" type="x-icon" a href="logo.png">
     <style>
         h1 {
             font-size: 3em;
@@ -19,7 +20,7 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
-            font-family: 'Times New Roman', Times, serif;
+            font-family:Arial, Helvetica, sans-serif
             
         }
 
@@ -93,8 +94,48 @@
         direction: rtl;
         }
         
-        
-    </style>
+
+
+
+.popuptext {
+  visibility: hidden;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  color: #15ff00;
+ 
+}
+
+
+.popuptext:after {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: 5px;
+  border-width: 5px;
+  border-style: dotted;
+  
+  
+ 
+}
+
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  
+}
+ </style>
 </head>
 <body>
     
@@ -126,18 +167,29 @@
 
     ADJUTMENTS<BR>
         <input type="text" id="adjustments" placeholder="Enter Adjustments:" name="adjustments" required><br>
-       PAYMENT RECEIPT<BR>
-        <input type="file" id="file" name="file" required><br>
-        <button id="submit">ORDER</a></button>
+        
+        
+        PAYMENT RECEIPT<BR>
+            <input type="file" id="file" name="file" required><br>
+        <BR>
+    
+       
+        
+        <button id="submit"><div class="popup" onclick="myFunction()" text size="2cap"> <B>ORDER</B>
+            <span class="popuptext" id="myPopup"><B>SUCCESSFULLY ORDERED</B></span>
+          </div></a></button>
         
     </button>
     </form>
-  </h3>
-   
-   
-    
-
-    <script>
+  
+<script>
+function myFunction()
+ {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+       
+        
         document.getElementById('myForm').addEventListener('submit', function (e) {
             e.preventDefault();
 
@@ -153,11 +205,11 @@
             .then(data => {
 
 
-                console.log(data);alert("SUCCEEFULLY ORDERED:")
+                console.log(data);
                 // Handle success or error
             })
             .catch(error => {
-                console.error('Error:', error);
+                console.error('Error:', error);alert("SUCCESSFULLY ORDERED")
             });
         });
 
@@ -167,6 +219,7 @@
 
         
     </script>
+    
 </body>
 </html>
 
